@@ -12,6 +12,11 @@
 
 } 
 
+.nav-link:hover{
+    text-decoration: underline;
+    color: #6F5E5C;
+}
+
 .carousel-item img {
     height: 80vh;
     object-fit: cover;

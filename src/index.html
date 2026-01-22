@@ -6,7 +6,7 @@
     <title>Document</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -43,45 +43,51 @@
         </div>
       </div>
     </nav>
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-12">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="./assets/ImgCarruselHome1.jpg" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Item 1 Heading</h5>
+                  <p>Item 1 Description</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./assets/ImgCarruselHome2.jpg" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Item 2 Heading</h5>
+                  <p>Item 2 Description</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./assets/ImgCarruselHome3.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Item 3 Heading</h5>
+                  <p>Item 3 Description</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="./assets/R.jfif" alt="First slide">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Item 1 Heading</h5>
-            <p>Item 1 Description</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="./assets/3988914.jpg" alt="Second slide">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Item 2 Heading</h5>
-            <p>Item 2 Description</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="./assets/1343533.png" alt="Third slide">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Item 3 Heading</h5>
-            <p>Item 3 Description</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-      </button>
+      <hr>
     </div>
-    <hr>
     <h2 class="text-center">RECOMMENDED PRODUCTS</h2>
     <hr>
     <div class="container">
@@ -289,6 +295,10 @@
         </div>
       </div>
     </footer>
+
+    <a href="./productos.html" class="floating-buy" aria-label="Ir a la tienda">
+      <img src="./assets/icons/carro-de-la-compra.png" alt="Carrito de compras">
+    </a>
     
     <!-- Bootstrap JS Bundle con Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

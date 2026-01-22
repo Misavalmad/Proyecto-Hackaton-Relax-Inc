@@ -12,6 +12,11 @@
 
 }
 
+.nav-link:hover{
+    text-decoration: underline;
+    color: #6F5E5C;
+}
+
 
 .carousel .card {
   height: 550px;         
@@ -29,4 +34,5 @@
   .carousel {
     display: none;
   }
+
 }

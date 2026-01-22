@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<link rel="stylesheet" href="./css/Respiracion.css">
+
+<div id="breathing-app-root">
+    <section class="breathing-section">
+        <div class="bg-particles"></div>
+
+        <div class="breathing-container">
+            <h1>Respira con nosotros</h1>
+            <p class="breathing-subtitle">Enfócate...</p>
+
+            <div class="breathing-circle-wrapper" onclick="toggleBreathing()">
+                <div class="inner-circle" id="breathingCircle">
+                    <div style="color:white; font-size: 1.2rem; font-weight: 300; z-index: 2;">Relax-inc</div>
+                </div>
+            </div>
+
+            <div class="breathing-instruction" id="instruction">Presiona el circulo para comenzar</div>
+
+            <div class="breathing-controls">
+                <button class="breathing-btn" id="playBtn" onclick="toggleBreathing()">
+                    <span class="btn-text">Iniciar</span>
+                    <div class="hoverEffect"><div></div></div>
+                </button>
+            
+                <button class="breathing-btn" onclick="resetSession()">
+                    <span class="btn-text">Reiniciar</span>
+                    <div class="hoverEffect"><div></div></div>
+                </button>
+            </div>
+
+            <div class="sound-controls">
+                <button class="sound-btn" onclick="toggleSound('rain')">Rain</button>
+                <button class="sound-btn" onclick="toggleSound('ocean')">Ocean</button>
+                <button class="sound-btn" onclick="toggleSound('forest')">Forest</button>
+                <button class="sound-btn" onclick="toggleSound('silence')">Silence</button>
+            </div>
+
+            <div class="timer-display" id="timer">00:00</div>
+        </div>
+    </section>
+
+    <script src="./js/Respiracion.js"></script>
+</div>

@@ -1,9 +1,14 @@
-
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
 
 #breathing-app-root {
+    padding-bottom: 0;
     width: 100%;
     position: relative;
-    height: 600px; /* Altura fija para el widget */
+    /*Tuvimos que quitar height para que se viera bien*/
     overflow: hidden;
     font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background: linear-gradient(135deg, #ad62af 0%, #6F5E5C 100%);

@@ -1,5 +1,11 @@
 :root{
 
+    body {
+        overflow-x: hidden; /* Evita espacio adicional a la derecha y por ende el scroll horizontal */
+    }
+
+
+
     --background-color: #FFFFFF;
     --hover-color: #6F5E5C;
     --header-color: #C3BAAA;
